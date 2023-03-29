@@ -1,0 +1,104 @@
+
+body {
+    font-family: Roboto, sans-serif;
+}
+.navbar {
+    background-color: #333333;
+}
+
+#cabecalho .nav .nav-link.active, #fale-conosco button,
+#reserva button {
+    background-color: #999999;
+    color: black;
+}
+
+.card {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card.custom-card {
+    border: none;
+    border-radius: round;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #dfdfdf;
+}
+
+.section-title, #reserva h1 {
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #dadada;
+}
+
+.text-colored {
+    color: #707070;
+}
+
+.nav-cardapio .nav-link.active {
+    color: #ffffff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #000000;
+}nav
+
+.social-links li {
+    list-style: none;
+    display: flex;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #sobre-o-restaurante .carousel-item img, #fale-conosco .carousel-item img {
+        height: 400px;
+    }
+    .nav-cardapio button {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1280px) {
+    #sobre-o-restaurante .carousel-item img, #fale-conosco .carousel-item img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1936px) {
+    .carousel {
+        margin: 0 auto;
+        max-width: 1296px;
+    }
+    
+    .carousel-item {
+        height: 450px;
+    }
+        
+    .carousel-control-prev, .carousel-control-next {
+        transform: translate(0, 0);
+        }
+}

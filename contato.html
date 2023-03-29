@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
+            <button class="navbar-toggler navbar-dark" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="./index.html" class="nav-link">
+                            <i class="bi me-1 bi-house-door"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="./eventos.html" class="nav-link">
+                            <i class="bi me-1 bi-calendar-check"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="./cardapio.html" class="nav-link">
+                            <i class="bi me-1 bi-card-text"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="./contato.html" class="nav-link">
+                            <i class="bi me-1 bi-chat-left-text"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="fale-conosco" class="pb-3">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000"  >
+                        <img src="images/slides/slide1.png"  alt="Foto do espaço interno do restaurante" srcset="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slides/slide2.png" data-bs-interval="2000"  alt="Duas taças de vinho" srcset="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slides/slide3.png" data-bs-interval="2000"  alt="Ume mesa com comida" srcset="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="container pt-3">
+                <div class="row">
+                    <h2 class="section-title text-center pb-5">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-4">
+                        <form id="contato">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="nome">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" name="nome" required></input>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="email">Seu email</label>
+                                <input type="text" id="email" class="form-control" name="email" placeholder="exemplo@exemplo.com.br" required></input>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="telefone">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links list-inline">
+                                <li class="fs-5 list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 list-inline-item ms-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 list-inline-item ms-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            
+                            
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 123 Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-between align-items-center py-1 text-light">
+            <p class="m-0">2023 &copy; Nome da Loja - Todos os direitos reservados</p>
+            <ul class="social-links list-inline ">
+                <li class="fs-5 list-inline-item">
+                    <a href="#">
+                        <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                </li>
+                <li class="fs-5 list-inline-item ms-2">
+                    <a href="#">
+                        <i class="bi bi-instagram text-colored"></i>
+                    </a>
+                </li>
+                <li class="fs-5 list-inline-item ms-2">
+                    <a href="#">
+                        <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
